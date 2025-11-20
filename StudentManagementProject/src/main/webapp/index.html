@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management System</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#eef2f3;
+           min-height:100vh; display:flex; align-items:center; justify-content:center; }
+    .container { width: 460px; background:#fff; padding:32px; border-radius:14px;
+                 box-shadow:0 5px 18px rgba(0,0,0,0.2); }
+    h1 { margin:0 0 20px; text-align:center; color:#333; }
+    .btn { width:100%; padding:14px; margin:8px 0; background:#4a90e2; color:#fff;
+           border:none; border-radius:6px; font-size:16px; cursor:pointer; transition:.2s; text-align:center; }
+    .btn:hover { background:#357ac8; }
+    a.btn { display:block; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management System</h1>
+
+    <!-- Link your other pages/servlets as you build them -->
+    <a class="btn" href="registration.html">1) Student Registration by ID</a>
+    <a class="btn" href="update.html">2) Update Student by ID</a>
+    <a class="btn" href="delete.html">3) Delete Student by ID</a>
+    <a class="btn" href="viewstudent.html">4) View Student by ID</a>
+
+    <!-- This one CALLS the servlet -->
+    <a class="btn" href="DisplayAllStudents">5) Display All Students</a>
+  </div>
+</body>
+</html>

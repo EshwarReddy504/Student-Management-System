@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 420px;
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            color: #444;
+        }
+
+        input {
+            width: 95%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #357ac8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Registration</h2>
+
+        <!-- Change action="RegisterServlet" to your servlet URL -->
+        <form action="StudentServlet" method="post">
+
+            <label>Student ID</label>
+            <input type="text" name="sid" required />
+
+            <label>Student Name</label>
+            <input type="text" name="sname" required />
+
+            <label>Mother Name</label>
+            <input type="text" name="mname" required />
+
+            <label>Father Name</label>
+            <input type="text" name="fname" required />
+
+            <label>Age</label>
+            <input type="number" name="age" required />
+
+            <label>Gmail</label>
+            <input type="email" name="gmail" required />
+
+            <label>Phone Number</label>
+            <input type="text" name="phone" required />
+
+            <label>Location</label>
+            <input type="text" name="location" required />
+
+            <button class="btn" type="submit">Register</button>
+        </form>
+       
+    </div>
+</body>
+</html>
