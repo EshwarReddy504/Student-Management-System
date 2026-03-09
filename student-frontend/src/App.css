@@ -1,0 +1,27 @@
+body{
+  background:#f4f6f9;
+  font-family:Arial;
+}
+
+.container{
+  width:500px;
+  margin:auto;
+  margin-top:50px;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+  padding:8px;
+  margin:5px;
+}
+
+button{
+  padding:8px 12px;
+  background:#007bff;
+  color:white;
+  border:none;
+  border-radius:5px;
+}
